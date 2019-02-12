@@ -1,0 +1,115 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+
+	<filter>
+		<filter-name>LoginFilter</filter-name>
+		<filter-class>com.nixsolutions.webapp.servlets.filters.LoginFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>LoginFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>com.nixsolutions.webapp.servlets.controllers.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.nixsolutions.webapp.servlets.controllers.LoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>AdminEditPage</servlet-name>
+		<jsp-file>/AdminEditPage.jsp</jsp-file>
+	</servlet>
+	<servlet>
+		<servlet-name>AdminAddPage</servlet-name>
+		<jsp-file>/AdminAddPage.jsp</jsp-file>
+	</servlet>
+	<servlet>
+		<servlet-name>ErrorHandler</servlet-name>
+		<jsp-file>/ErrorHandler.jsp</jsp-file>
+	</servlet>
+	<servlet>
+		<servlet-name>LoginPage</servlet-name>
+		<jsp-file>/LoginPage.jsp</jsp-file>
+	</servlet>
+	<servlet>
+		<servlet-name>DeleteServlet</servlet-name>
+		<servlet-class>com.nixsolutions.webapp.servlets.controllers.DeleteServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>EditServlet</servlet-name>
+		<display-name>EditServlet</display-name>
+		<description></description>
+		<servlet-class>com.nixsolutions.webapp.servlets.controllers.EditServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>AddServlet</servlet-name>
+		<display-name>AddServlet</display-name>
+		<description></description>
+		<servlet-class>com.nixsolutions.webapp.servlets.controllers.AddServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/home</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DeleteServlet</servlet-name>
+		<url-pattern>/adminDelete</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AdminEditPage</servlet-name>
+		<url-pattern>/editpage</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AdminAddPage</servlet-name>
+		<url-pattern>/addpage</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ErrorHandler</servlet-name>
+		<url-pattern>/error</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginPage</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EditServlet</servlet-name>
+		<url-pattern>/adminEdit</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddServlet</servlet-name>
+		<url-pattern>/adminAdd</url-pattern>
+	</servlet-mapping>
+
+	<!-- error-code related error pages -->
+	<error-page>
+		<error-code>404</error-code>
+		<location>/error</location>
+	</error-page>
+
+	<error-page>
+		<error-code>403</error-code>
+		<location>/error</location>
+	</error-page>
+
+	<error-page>
+		<exception-type>java.lang.Throwable</exception-type>
+		<location>/error</location>
+	</error-page>
+
+	<taglib>
+		<taglib-uri>mytaglib</taglib-uri>
+		<taglib-location>/library.tld</taglib-location>
+	</taglib>
+</web-app>
