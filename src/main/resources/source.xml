@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContinentData Name="Europe"> 
+	<CountriesData> 
+		<CountryData Name="Ukraine" Area="603700"
+			Population="46314736"> 
+			<CapitalData Name="Kyiv" >satisfiable</CapitalData>
+			<CapitalData Name="Kyiv" >satisfiable</CapitalData>
+			<CapitalData Name="Kyiv" >satisfiable</CapitalData>
+		</CountryData> 
+		<CountryData Name="France" Area="547030"
+			Population="61875822"> 
+			<CapitalData Name="Paris" >adjective0</CapitalData>
+			<CapitalData Name="Paris" >adjective0</CapitalData>
+			<CapitalData Name="Paris" >adjective0</CapitalData>
+		</CountryData> 
+		<CountryData Name="Germany" Area="357022"
+			Population="82310000"> 
+			<CapitalData Name="Berlin" >adjective1</CapitalData>
+			<CapitalData Name="Berlin" >adjective1</CapitalData>
+			<CapitalData Name="Berlin" >adjective1</CapitalData>
+		</CountryData>
+		<CountryData Name="England" Area="357022"
+			Population="82310000"> 
+			<CapitalData Name="London" >adjective2</CapitalData>
+			<CapitalData Name="London" >adjective2</CapitalData>
+			<CapitalData Name="London" >adjective2</CapitalData>
+		</CountryData>
+		<CountryData Name="China" Area="357022"
+			Population="82310000"> 
+			<CapitalData Name="Beijing" >adjective3</CapitalData>
+			<CapitalData Name="Beijing" >adjective3</CapitalData>
+			<CapitalData Name="Beijing" >adjective3</CapitalData>
+		</CountryData>
+	</CountriesData>
+</ContinentData>    

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<dataset>
-    <users user_id='1' login='liangsuyun' password='qwerty' email='lsuyun123' firstName='Suyun' lastName='Liang' birthday='1998-08-6' role_id='1' />
-    <users user_id='2' login='npiskaryov' password='12345' email='nikita321' firstName='Nikita' lastName='Piskaryov' birthday='1999-01-15' role_id='1' />
-    <users user_id='3' login='jdjra' password='zxc' email='edjura987' firstName='Eugene' lastName='Djura' birthday='1999-07-07' role_id='2' />
-</dataset>
