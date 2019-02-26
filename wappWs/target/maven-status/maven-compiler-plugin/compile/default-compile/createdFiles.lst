@@ -1,0 +1,17 @@
+com/nixsolutions/webapp/controllers/RegistrationController.class
+com/nixsolutions/webapp/service/UserDetailsServiceImp.class
+com/nixsolutions/webapp/service/hibernate/HibernateDao.class
+com/nixsolutions/webapp/tag/UserTag.class
+com/nixsolutions/webapp/service/hibernate/HibernateUserDao.class
+com/nixsolutions/webapp/controllers/AdminController.class
+com/nixsolutions/webapp/config/WebConfig.class
+com/nixsolutions/webapp/modelClasses/User.class
+com/nixsolutions/webapp/service/hibernate/HibernateRoleDao.class
+com/nixsolutions/webapp/dao/RoleDao.class
+com/nixsolutions/webapp/config/MvcWebApplicationInitializer.class
+com/nixsolutions/webapp/validator/UserUniqueValidator.class
+com/nixsolutions/webapp/controllers/LoginController.class
+com/nixsolutions/webapp/dao/UserDao.class
+com/nixsolutions/webapp/config/SecurityWebApplicationInitializer.class
+com/nixsolutions/webapp/config/WebSecurityConfig.class
+com/nixsolutions/webapp/modelClasses/Role.class

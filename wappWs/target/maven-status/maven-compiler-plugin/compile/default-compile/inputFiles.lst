@@ -1,0 +1,17 @@
+/home/NIX/piskaryov/eclipse-workspace/wappMockito/src/main/java/com/nixsolutions/webapp/config/MvcWebApplicationInitializer.java
+/home/NIX/piskaryov/eclipse-workspace/wappMockito/src/main/java/com/nixsolutions/webapp/controllers/AdminController.java
+/home/NIX/piskaryov/eclipse-workspace/wappMockito/src/main/java/com/nixsolutions/webapp/service/hibernate/HibernateRoleDao.java
+/home/NIX/piskaryov/eclipse-workspace/wappMockito/src/main/java/com/nixsolutions/webapp/config/WebSecurityConfig.java
+/home/NIX/piskaryov/eclipse-workspace/wappMockito/src/main/java/com/nixsolutions/webapp/modelClasses/User.java
+/home/NIX/piskaryov/eclipse-workspace/wappMockito/src/main/java/com/nixsolutions/webapp/service/hibernate/HibernateDao.java
+/home/NIX/piskaryov/eclipse-workspace/wappMockito/src/main/java/com/nixsolutions/webapp/service/hibernate/HibernateUserDao.java
+/home/NIX/piskaryov/eclipse-workspace/wappMockito/src/main/java/com/nixsolutions/webapp/dao/RoleDao.java
+/home/NIX/piskaryov/eclipse-workspace/wappMockito/src/main/java/com/nixsolutions/webapp/tag/UserTag.java
+/home/NIX/piskaryov/eclipse-workspace/wappMockito/src/main/java/com/nixsolutions/webapp/dao/UserDao.java
+/home/NIX/piskaryov/eclipse-workspace/wappMockito/src/main/java/com/nixsolutions/webapp/modelClasses/Role.java
+/home/NIX/piskaryov/eclipse-workspace/wappMockito/src/main/java/com/nixsolutions/webapp/controllers/LoginController.java
+/home/NIX/piskaryov/eclipse-workspace/wappMockito/src/main/java/com/nixsolutions/webapp/config/SecurityWebApplicationInitializer.java
+/home/NIX/piskaryov/eclipse-workspace/wappMockito/src/main/java/com/nixsolutions/webapp/controllers/RegistrationController.java
+/home/NIX/piskaryov/eclipse-workspace/wappMockito/src/main/java/com/nixsolutions/webapp/config/WebConfig.java
+/home/NIX/piskaryov/eclipse-workspace/wappMockito/src/main/java/com/nixsolutions/webapp/service/UserDetailsServiceImp.java
+/home/NIX/piskaryov/eclipse-workspace/wappMockito/src/main/java/com/nixsolutions/webapp/validator/UserUniqueValidator.java
