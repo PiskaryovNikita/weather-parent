@@ -10,11 +10,11 @@ import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-import com.nixsolutions.webapp.modelClasses.Role;
-import com.nixsolutions.webapp.modelClasses.User;
+import com.nixsolutions.webapp.model.Role;
+import com.nixsolutions.webapp.model.User;
 
 @Configuration
-@ComponentScan({ "com.nixsolutions.webapp.service.hibernate" })
+@ComponentScan({ "com.nixsolutions.webapp.service", "com.nixsolutions.webapp.persistence" })
 @EnableTransactionManagement
 public class TestConfig {
 

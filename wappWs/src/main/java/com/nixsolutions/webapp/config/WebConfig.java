@@ -15,18 +15,18 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-import com.nixsolutions.webapp.modelClasses.Role;
-import com.nixsolutions.webapp.modelClasses.User;
+import com.nixsolutions.webapp.model.Role;
+import com.nixsolutions.webapp.model.User;
 
 @Configuration
 @ComponentScan({ "com.nixsolutions" })
-@EnableWebMvc//configs for webmvc
+@EnableWebMvc // configs for webmvc
 @EnableTransactionManagement
 @PropertySource("classpath:/ds.properties")
 public class WebConfig implements WebMvcConfigurer {
 	@Autowired
 	private Environment env;
-	
+
 	@Override
 	public void configureViewResolvers(ViewResolverRegistry registry) {
 		registry.jsp("/WEB-INF/pages/", ".jsp");

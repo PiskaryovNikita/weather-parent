@@ -1,6 +1,6 @@
-/home/NIX/piskaryov/eclipse-workspace/wappMockito/src/test/java/com/nixsolutions/webapp/mockito/LoginControllerTest.java
-/home/NIX/piskaryov/eclipse-workspace/wappMockito/src/test/java/com/nixsolutions/webapp/dao/TestConfig.java
-/home/NIX/piskaryov/eclipse-workspace/wappMockito/src/test/java/com/nixsolutions/webapp/mockito/RegistrationControllerTest.java
-/home/NIX/piskaryov/eclipse-workspace/wappMockito/src/test/java/com/nixsolutions/webapp/dao/SpringRoleTest.java
-/home/NIX/piskaryov/eclipse-workspace/wappMockito/src/test/java/com/nixsolutions/webapp/dao/SpringUserTest.java
-/home/NIX/piskaryov/eclipse-workspace/wappMockito/src/test/java/com/nixsolutions/webapp/mockito/AdminControllerTest.java
+/home/nikita/eclipse-workspace/wappWs/src/test/java/com/nixsolutions/webapp/dao/TestConfig.java
+/home/nikita/eclipse-workspace/wappWs/src/test/java/com/nixsolutions/webapp/mockito/LoginControllerTest.java
+/home/nikita/eclipse-workspace/wappWs/src/test/java/com/nixsolutions/webapp/dao/SpringUserTest.java
+/home/nikita/eclipse-workspace/wappWs/src/test/java/com/nixsolutions/webapp/dao/SpringRoleTest.java
+/home/nikita/eclipse-workspace/wappWs/src/test/java/com/nixsolutions/webapp/mockito/AdminControllerTest.java
+/home/nikita/eclipse-workspace/wappWs/src/test/java/com/nixsolutions/webapp/mockito/RegistrationControllerTest.java

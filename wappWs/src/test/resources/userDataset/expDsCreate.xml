@@ -2,8 +2,8 @@
 <dataset>
 	<ROLE ROLEID='1' name='user' />
 	<ROLE ROLEID='2' name='admin' />
-	<USER USERID='1' LOGIN='l' PASSWORD='s' EMAIL='sl' FIRSTNAME='s'
-		LASTNAME='l' BIRTHDAY='1999-07-07' ROLE_ROLEID='2' />
+	<USER LOGIN='l' PASSWORD='s' EMAIL='sl' FIRSTNAME='s' LASTNAME='l'
+		BIRTHDAY='1999-07-07' ROLE_ROLEID='2' />
 	<USER USERID='10' LOGIN='liangsuyun' PASSWORD='qwerty'
 		EMAIL='lsuyun123' FIRSTNAME='Suyun' LASTNAME='Liang'
 		BIRTHDAY='1998-08-6' ROLE_ROLEID='2' />

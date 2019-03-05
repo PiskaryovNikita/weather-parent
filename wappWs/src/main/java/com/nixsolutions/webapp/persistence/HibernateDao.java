@@ -3,6 +3,7 @@ package com.nixsolutions.webapp.persistence;
 import java.util.List;
 
 import javax.persistence.Query;
+import javax.transaction.Transactional;
 
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
@@ -12,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 @Repository
+@Transactional
 public class HibernateDao {
 	@Autowired
 	private SessionFactory sessionFactory;

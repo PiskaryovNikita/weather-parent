@@ -10,22 +10,24 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.nixsolutions.webapp.dao.UserDao;
-import com.nixsolutions.webapp.modelClasses.User;
+import com.nixsolutions.webapp.model.User;
+import com.nixsolutions.wsxx.errorHandling.exceptions.DataNotFoundExcpetion;
 
 @Service
 public class UserDetailsServiceImp implements UserDetailsService {
 
 	@Autowired
-	private UserDao userDao;
+	private UserService userService;
 	private static final Logger logger = Logger.getLogger(UserDetailsServiceImp.class);
 
 	@Transactional
 	@Override
 	public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
-		User user;
+		User user = null;
 		try {
-			user = userDao.findByLogin(userName);
+			user = userService.findByLogin(userName);
+		} catch (DataNotFoundExcpetion e) {
+			logger.error("no user with username " + userName, e);
 		} catch (Exception e) {
 			logger.error("loadUserByUsername", e);
 			throw new RuntimeException("excbyload", e);

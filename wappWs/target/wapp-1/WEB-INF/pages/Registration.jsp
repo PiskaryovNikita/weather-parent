@@ -119,7 +119,7 @@
 			<tr>
 				<td></td>
 				<td><div class="g-recaptcha"
-						data-sitekey="6Ld6CHkUAAAAAMbqfh04Dqbul8wG_xmtOTwoc8T7"
+						data-sitekey="6LdwM5MUAAAAAKUMqRy_4rdOxiKBZsmzXkLQC2fj"
 						data-callback="enableBtn"></div></td>
 			</tr>
 			<tr>

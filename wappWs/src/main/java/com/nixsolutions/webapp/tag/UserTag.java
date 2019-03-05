@@ -8,7 +8,7 @@ import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.PageContext;
 import javax.servlet.jsp.tagext.Tag;
 
-import com.nixsolutions.webapp.modelClasses.User;
+import com.nixsolutions.webapp.model.User;
 
 public class UserTag implements Tag {
 	private PageContext pageContext;

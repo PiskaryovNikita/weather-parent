@@ -169,23 +169,29 @@
 			<artifactId>hibernate-validator</artifactId>
 			<version>6.0.10.Final</version>
 		</dependency>
-	<!-- JERSEY -->
+		<!-- JERSEY -->
 		<dependency>
 			<groupId>org.glassfish.jersey.containers</groupId>
 			<artifactId>jersey-container-servlet</artifactId>
 			<version>2.26</version>
 		</dependency>
-	<!-- FOR JSON RESOURCE REPRESENTATION -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.glassfish.jersey.media</groupId> -->
-<!-- 			<artifactId>jersey-media-json-jackson</artifactId> -->
-<!-- 			<version>2.26</version> -->
-<!-- 		</dependency> -->
+		<!-- FOR JAVA OBJECT TO JSON CONVERTION -->
+		<dependency>
+			<groupId>org.glassfish.jersey.media</groupId>
+			<artifactId>jersey-media-moxy</artifactId>
+			<version>2.26</version>
+		</dependency>
 		<dependency>
 			<groupId>org.glassfish.jersey.ext</groupId>
 			<artifactId>jersey-spring4</artifactId>
 			<version>2.27</version>
 		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.9.8</version>
+		</dependency>
+		<!-- GLASSFISH CONTAINS JAXWS RI(metro) -->
 
 	</dependencies>
 

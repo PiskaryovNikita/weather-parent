@@ -11,9 +11,9 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.Validator;
 
-import com.nixsolutions.webapp.controllers.RegistrationController;
-import com.nixsolutions.webapp.dao.UserDao;
-import com.nixsolutions.webapp.modelClasses.User;
+import com.nixsolutions.webapp.controller.RegistrationController;
+import com.nixsolutions.webapp.model.User;
+import com.nixsolutions.webapp.service.UserService;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.inOrder;
@@ -26,7 +26,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 public class RegistrationControllerTest {
 	@Mock
-	private UserDao userDao;
+	private UserService userDao;
 	@Mock
 	private Validator userValidator;
 	@InjectMocks

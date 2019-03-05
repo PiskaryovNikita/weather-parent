@@ -1,6 +1,6 @@
 com/nixsolutions/webapp/mockito/LoginControllerTest.class
 com/nixsolutions/webapp/mockito/RegistrationControllerTest.class
 com/nixsolutions/webapp/dao/SpringRoleTest.class
-com/nixsolutions/webapp/mockito/AdminControllerTest.class
 com/nixsolutions/webapp/dao/SpringUserTest.class
+com/nixsolutions/webapp/mockito/AdminControllerTest.class
 com/nixsolutions/webapp/dao/TestConfig.class

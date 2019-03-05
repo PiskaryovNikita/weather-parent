@@ -3,49 +3,46 @@ package com.nixsolutions.webapp.persistence;
 import java.util.List;
 import java.util.Objects;
 
-import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
+import javax.transaction.Transactional;
 
-import com.nixsolutions.webapp.dao.RoleDao;
-import com.nixsolutions.webapp.modelClasses.Role;
+import org.springframework.stereotype.Repository;
+
+import com.nixsolutions.webapp.model.Role;
 
 @Repository
+@Transactional
 public class HibernateRoleDao extends HibernateDao implements RoleDao {
 
 	@Override
-	@Transactional
 	public void create(Role role) {
 		Objects.requireNonNull(role);
 		createObject(role);
 	}
 
 	@Override
-	@Transactional
 	public void update(Role role) {
 		Objects.requireNonNull(role);
-		if (findByName(role.getName()) != null) {
-			throw new RuntimeException(role.toString() + "entry with this name already in db");
-		}
 		updateObject(role);
 	}
 
 	@Override
-	@Transactional
 	public void remove(Role role) {
 		Objects.requireNonNull(role);
-		if (findByName(role.getName()) == null) {
-			throw new RuntimeException(role.toString() + "doesn't exist in DB");
-		}
 		removeObject(role);
 	}
 
-	@Transactional
 	public void removeAll() {
 		removeAllObjects("DELETE Role");
 	}
 
 	@Override
-	@Transactional
+	public Role findById(Long roleId) {
+		Objects.requireNonNull(roleId);
+		String hql = "FROM Role R WHERE R.roleId = :search_factor";
+		return (Role) findObject(hql, roleId);
+	}
+
+	@Override
 	public Role findByName(String name) {
 		Objects.requireNonNull(name);
 		String hql = "FROM Role R WHERE R.name = :search_factor";
@@ -53,7 +50,6 @@ public class HibernateRoleDao extends HibernateDao implements RoleDao {
 		return result;
 	}
 
-	@Transactional
 	public List<Role> findAll() {
 		String hql = "FROM Role";
 		return findList(hql);

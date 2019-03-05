@@ -23,11 +23,11 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.Validator;
 
-import com.nixsolutions.webapp.controllers.AdminController;
-import com.nixsolutions.webapp.dao.RoleDao;
-import com.nixsolutions.webapp.dao.UserDao;
-import com.nixsolutions.webapp.modelClasses.Role;
-import com.nixsolutions.webapp.modelClasses.User;
+import com.nixsolutions.webapp.controller.AdminController;
+import com.nixsolutions.webapp.model.Role;
+import com.nixsolutions.webapp.model.User;
+import com.nixsolutions.webapp.service.RoleService;
+import com.nixsolutions.webapp.service.UserService;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyLong;
@@ -39,9 +39,9 @@ import static org.mockito.MockitoAnnotations.initMocks;
 
 public class AdminControllerTest {
 	@Mock
-	private UserDao userDao;
+	private UserService userDao;
 	@Mock
-	private RoleDao roleDao;
+	private RoleService roleDao;
 	@Mock
 	private Validator userValidator;
 	@Mock

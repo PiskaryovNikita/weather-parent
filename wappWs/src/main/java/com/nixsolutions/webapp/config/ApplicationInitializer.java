@@ -4,6 +4,7 @@ import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration;
 
+import org.springframework.context.ApplicationContext;
 import org.springframework.core.annotation.Order;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
@@ -13,11 +14,13 @@ import org.springframework.web.servlet.DispatcherServlet;
 
 @Order(1)
 public class ApplicationInitializer implements WebApplicationInitializer {
+	public static ApplicationContext appcontext;
 
 	@Override
 	public void onStartup(ServletContext container) throws ServletException {
 		container.setInitParameter("contextConfigLocation", "noop");
 		AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();
+		appcontext = context;
 		context.register(WebConfig.class);
 		context.register(WebSecurityConfig.class);
 		context.setServletContext(container);
