@@ -1,0 +1,3 @@
+org/nixsolutions/dao/impl/WeatherDaoImpl.class
+org/nixsolutions/dao/sessionFactory/CassandraSessionFactory.class
+org/nixsolutions/dao/contract/WeatherDao.class
