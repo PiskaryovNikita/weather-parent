@@ -24,6 +24,7 @@
 		<cxf.version>3.1.5</cxf.version>
 		<log4j-version>1.2.16</log4j-version>
 		<slf4j-version>1.6.1</slf4j-version>
+		<camel.version>2.16.2</camel.version>
 	</properties>
 
 	<modules>
@@ -31,6 +32,7 @@
 		<module>dao</module>
 		<module>server</module>
 		<module>feature</module>
+		<module>camel</module>
 	</modules>
 
 	<dependencies>
@@ -129,6 +131,35 @@
 			<groupId>javax.annotation</groupId>
 			<artifactId>javax.annotation-api</artifactId>
 			<version>1.2</version>
+		</dependency>
+
+		<!-- camel -->
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-core</artifactId>
+			<version>${camel.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-velocity</artifactId>
+			<version>${camel.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-mail</artifactId>
+			<version>${camel.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-stream</artifactId>
+			<version>${camel.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-test</artifactId>
+			<version>${camel.version}</version>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 
